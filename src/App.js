@@ -20,7 +20,7 @@ function App() {
     // Set the reliable data
     const sortedData = filteredData.sort((a, b) => new Date(b.date) - new Date(a.date));
     setData(sortedData);
-  }, []);
+  }, [data]);
 
   // Utility to get formatted date in mm/dd/yyyy format
   const getFormattedDate = (date) => {
